@@ -2,5 +2,8 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = ["@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/"]
+ffi = true
 
+# ffi allows foundry to run commands directly on your machine and is advisable to have turned off unless needed
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
